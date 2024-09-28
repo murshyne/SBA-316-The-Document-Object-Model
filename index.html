@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>316 Food Menu</title>
+
+</head>
+<body>
+    
+    <header>
+      <nav id="top-menu"></nav>
+      <nav id="sub-menu"></nav>
+    </header>
+    <main>
+      <img src="./bg.png" alt="Background Image">
+    </main>
+    <div>
+      <fieldset>
+        <legend>Please Confirm age</legend>
+        <form action="">
+           <label
+        ><h1></h1>
+        <h3>Please confirm by Typing <em>I am 18</em></h3>
+        <input
+          type="text"
+          name=""
+          min="18"
+          max="110" /></label
+      >
+          <input type="submit" onclick="clicked(event)" />
+        </form>
+      </fieldset>
+    </div>
+    <script src="./script.js">
+function clicked(e)
+{
+    if(!confirm('Are you sure?')) {
+        e.preventDefault();
+    }
+}
+</script>
+
+</body>
+</html>
