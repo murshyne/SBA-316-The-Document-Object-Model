@@ -9,38 +9,30 @@
 </head>
 <body>
     
-    <header>
-      <nav id="top-menu"></nav>
-      <nav id="sub-menu"></nav>
-    </header>
-    <main>
-      <img src="./bg.png" alt="Background Image">
-    </main>
-    <div>
-      <fieldset>
-        <legend>Please Confirm age</legend>
-        <form action="">
-           <label
-        ><h1></h1>
-        <h3>Please confirm by Typing <em>I am 18</em></h3>
-        <input
-          type="text"
-          name=""
-          min="18"
-          max="110" /></label
-      >
-          <input type="submit" onclick="clicked(event)" />
-        </form>
-      </fieldset>
+<header>
+  <nav id="top-menu"></nav>
+  <nav id="sub-menu"></nav>
+</header>
+ <div class="overlay" id="overlay">
+        <div class="modal">
+            <form id="nameform" action="">
+                <label for="nameInput">Please enter your name to proceed:</label>
+                <input type="text" id="nameInput" required>
+                <button type="submit" formaction="">Submit</button>
+            </form>
+        </div>
     </div>
-    <script src="./script.js">
-function clicked(e)
-{
-    if(!confirm('Are you sure?')) {
-        e.preventDefault();
-    }
-}
-</script>
+    <div class="container">
+        <h1 id="welcome-message" style="display: none;"></h1>
+    </div>
+<main>
+  <img src="./bg.png" alt="Background Image">
+</main>
+  
 
+
+
+
+    <script src="./script.js"></script>
 </body>
 </html>
